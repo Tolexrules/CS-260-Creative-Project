@@ -1,0 +1,52 @@
+img.nav_icon {
+    width: 100px;
+    height: 100px;
+}
+
+.bg-light {
+    background-color: #ADD8E6!important;
+}
+
+.nav-link {
+    font-family: 'Lucida Console';
+}
+
+img {
+    padding-top: 15px;
+}
+
+.stars {
+    max-height: 10%;
+    max-width: 30% !important;
+}
+
+.centered {
+    text-align: center;
+}
+
+h5 {
+    padding-top: 10px;
+    font-family: 'Lucida Console';
+}
+
+p {
+    padding-top: 15px;
+    font-family: 'Lucida Console';
+}
+
+li {
+    font-family: 'Lucida Console';
+}
+
+.page-footer {
+	margin-top: 10px;
+	background-color: #ADD8E6;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.navbar-nav {
+	width: 100%;
+}
