@@ -19,7 +19,7 @@
 		    <a class="nav-link text-dark" href="index.html">Home</a>
 		</li>
 		<li class="nav-item">
-		    <a class="nav-link text-dark" href="races.html">New Adventure!</a>
+		    <a class="nav-link text-dark" href="../../races/races.html">New Adventure!</a>
 		</li>
 	    </ul>
 	</div>
@@ -28,16 +28,44 @@
   <div class="container">
         <div class="row">
             <div class="col-md">
-		<p>You are a mighty mage capable of wielding phenomenal power...in training. As of yesterday, you've just finished your basic magic lessons under your eccentric teacher Andros in Xenos, who you swear taught you not because of your talent but rather because he needed a caretaker and gopher to handle all of their daily needs. Regardless, now that your basic lessons are complete, you've decided to go out adventuring in the world seeking new knowledge and experience. Where do you begin?</p>
+		<div class="player_status container">
+		    <div class="row">
+			<div class="col-md">
+			    <span>Level <span id="level"></span> <span id="race"></span> <span id="class"></span></span>
+			</div>
+			<div class="col-md">
+			    <span>EXP to Level: <span id="exp"></span></span>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-md">
+			    <span>Health: <span id="health"></span>/<span id="max_health"></span></span>
+			</div>
+			<div class="col-sm">
+			    <span>Attack: <span id="attack"></span> Defense: <span id="defense"></span></span>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-md">
+			    <span>Gold: <span id="gold"></span></span>
+			</div>
+			<div class="col-md">
+			    <span>Quest Progress: <span id="count"></span>/<span id="target"></span> <span id="name"></span></span>
+			</div>
+		    </div>
+		</div>
+		<p>You approach the old dwarf's weapon stall. The dwarf briefly meets your eyes, after which he grunts <span id="dwarf_text"></span> in a low, gravely voice, before returning to his work while keeping his eye on you perusing his goods. Do you buy anything?</p>
 		<ol>
-		    <li><a href="progress.html">Valentia, city by the sea. It is the biggest port in the country of Megala, trading millions of gold every day in myriad different commodities.</a></li>
-		    <li><a href="progress.html">Avegemon, royal capital. Ruled by the royal family, it is the political seat of power in the country of Megala, whith nearly all executive decisions being made here.</a></li>
-		    <li><a href="progress.html">Xenos, city of magic. Located at the foot of Mt. Thrusy where multiple magical leylines converge, it is a secluded place where mages have gathered to advance their craft.</a></li>
-		    <li><a href="classes.html">Go back and pick a different class.</a></li>
+		    <li><a href="JavaScript:purchase(0, 100)"><span id="weapon_one"></span>: 100 gold</a></li>
+		    <li><a href="JavaScript:purchase(1, 500)"><span id="weapon_two"></span>: 500 gold</a></li>
+		    <li><a href="JavaScript:purchase(2, 1500)"><span id="weapon_three"></span>: 1500 gold</a></li>
+		    <li><a href="JavaScript:purchase(3, 5000)"><span id="weapon_four"></span>: 5000 gold</a></a></li>
+		    <li id="sell"><a href="JavaScript:sell()">Sell your <span id="current"></span></a></li>
+		    <li><a href="/../valentia/valentia.html">Leave his stall</a></li>
             </div>
 	    <div class="col justify-content-center">
 		<div class="d-flex justify-content-center">
-		    <img src="/images/mage.jpg" height="650px" width="500px">
+		    <img src="/images/valentia_store.jpg" height="650px" width="500px">
 		</div>
     	    </div>
         </div>
@@ -68,6 +96,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="/load_status.js">
+    </script>
+    <script text="type/javascript" src="/valentia/store/script.js">
+    </script>
 
 </body>
 

@@ -3,6 +3,12 @@ img.nav_icon {
     height: 100px;
 }
 
+div.player_status {
+	border: solid;
+	margin-top: 15px;
+	
+}
+
 .bg-light {
     background-color: #ADD8E6!important;
 }
@@ -15,19 +21,10 @@ img {
     padding-top: 15px;
 }
 
-.stars {
-    max-height: 10%;
-    max-width: 30% !important;
-}
-
 .centered {
     text-align: center;
 }
 
-h5 {
-    padding-top: 10px;
-    font-family: 'Lucida Console';
-}
 
 p {
     padding-top: 15px;

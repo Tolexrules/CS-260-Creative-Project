@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>About</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="/index.html"><img class="nav_icon" src="/images/logo.jpg"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+		<li class="nav-item active">
+		    <a class="nav-link text-dark" href="index.html">Home</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link text-dark" href="../races/races.html">New Adventure!</a>
+		</li>
+	    </ul>
+	</div>
+    </nav>
+
+  <div class="container">
+        <div class="row">
+            <div class="col-md">
+		<div class="player_status container">
+		    <div class="row">
+			<div class="col-md">
+			    <span>Level <span id="level"></span> <span id="race"></span> <span id="class"></span></span>
+			</div>
+			<div class="col-md">
+			    <span>EXP to Level: <span id="exp"></span></span>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-md">
+			    <span>Health: <span id="health"></span>/<span id="max_health"></span></span>
+			</div>
+			<div class="col-sm">
+			    <span>Attack: <span id="attack"></span> Defense: <span id="defense"></span></span>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-md">
+			    <span>Gold: <span id="gold"></span></span>
+			</div>
+			<div class="col-md">
+			    <span>Quest Progress: <span id="count"></span>/<span id="target"></span> <span id="name"></span></span>
+			</div>
+		    </div>
+		</div>
+		<p>You are currently in the markets of Valentia, which are both extremely crowded and noisy as shoppers and merchants haggle for goods. In some side alleys you can see a few scoundrels and thieves lurking about, eyeing the people in the market trying to pick out easy targets. One particular stall catches your interest run by an old grizzled dwarf selling all sorts of weaponry, magical and nonmagical alike. You can also spy the adventurer's guild just up ahead right outside of the market, which is a good place to find work to make a few gold coins. Where do you go?</p>
+		<ol>
+		    <li><a href="/valentia/guild/guild.html">Adventurer's Guild</a></li>
+		    <li><a href="/valentia/store/store.html">Weapon stall</a></li>
+		    <li><a href="../progress.html">Find an inn to rest for the night</a></li>
+		    <li><a href="../progress.html">Explore the side alleys</a></li>
+		    <li><a href="../progress.html">Leave the city</a></li>
+            </div>
+	    <div class="col justify-content-center">
+		<div class="d-flex justify-content-center">
+		    <img src="/images/valentia.jpg" height="650px" width="500px">
+		</div>
+    	    </div>
+        </div>
+    </div>
+
+  <footer class="page-footer font-large">
+  	<div class="container-fluid text-center text-lg-left">
+    	    <div class="row">
+      		<div class="col justify-content-center">
+		    <div class="d-flex justify-content-center">
+        		<h5>Thank you for visiting! Hope to adventure with you again soon!</h5>
+		    </div>
+      		</div>
+	    </div>
+	    <div class="row">
+      		<div class="col justify-content-center">
+		    <div class="d-flex justify-content-center">
+			<ul class="list-unstyled">
+          		    <li>
+            		        <a href="https://github.com/Tolexrules/CS-260-Creative-Project">Github</a>
+          		    </li>
+        	        </ul>
+		    </div>
+      		</div>
+    	    </div>
+  	</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="/load_status.js">
+    </script>
+
+</body>
+
+</html>
